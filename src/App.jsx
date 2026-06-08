@@ -290,6 +290,29 @@ const strategicQuestions = [
       "The commercial opportunity is not only AI features, but reducing the professional services intensity of healthcare deployments."
   }
 ]
+const signalInsightRecommendation = [
+  {
+    signal: "Healthcare organizations are under pressure to reduce IT ownership and maintenance burden.",
+    insight:
+      "The buyer conversation is shifting from software capability to operating efficiency.",
+    recommendation:
+      "Position Health Connect Cloud around reduced operational load, faster deployment, and managed interoperability."
+  },
+  {
+    signal: "FHIR, AI readiness, and unified data access are becoming central to healthcare technology narratives.",
+    insight:
+      "FHIR is moving beyond compliance and becoming a control layer for AI-enabled healthcare data.",
+    recommendation:
+      "Frame IRIS for Health as an AI-ready healthcare data foundation, not only a standards-based repository."
+  },
+  {
+    signal: "Cloud providers and EHR vendors are expanding into adjacent healthcare infrastructure layers.",
+    insight:
+      "InterSystems’ differentiation depends on owning the space between clinical workflows and data infrastructure.",
+    recommendation:
+      "Strengthen messaging around healthcare-native orchestration, not generic cloud integration."
+  }
+]
 export default function App() {
   return (
     <main
@@ -1784,6 +1807,162 @@ color:brand.deep
 <strong>Strategic implication: </strong>
 {item.implication}
 </p>
+
+</div>
+))}
+
+</div>
+
+</section>
+<section
+style={{
+padding:"110px 9vw",
+background:"#ffffff"
+}}
+>
+
+<p
+style={{
+fontSize:"12px",
+letterSpacing:"4px",
+textTransform:"uppercase",
+color:brand.blue,
+marginBottom:"28px"
+}}
+>
+Signal to Recommendation
+</p>
+
+<h2
+style={{
+fontSize:"clamp(30px,4vw,52px)",
+lineHeight:"1.08",
+fontWeight:"500",
+maxWidth:"900px",
+color:brand.navy,
+marginBottom:"24px"
+}}
+>
+Turning weak signals into commercial action.
+</h2>
+
+<p
+style={{
+fontSize:"16px",
+lineHeight:"1.8",
+maxWidth:"760px",
+color:brand.text,
+marginBottom:"60px"
+}}
+>
+The value of market intelligence is not the collection of information. It is the ability to convert fragmented external signals into clear implications for product marketing, positioning, and go-to-market strategy.
+</p>
+
+<div
+style={{
+display:"grid",
+gap:"24px"
+}}
+>
+
+{signalInsightRecommendation.map((item,index)=>(
+<div
+key={item.signal}
+style={{
+display:"grid",
+gridTemplateColumns:"1fr 1fr 1fr",
+gap:"1px",
+background:brand.border,
+border:`1px solid ${brand.border}`
+}}
+>
+
+<div
+style={{
+background:brand.light,
+padding:"32px"
+}}
+>
+<p
+style={{
+fontSize:"12px",
+letterSpacing:"3px",
+textTransform:"uppercase",
+color:brand.cyan,
+marginBottom:"24px"
+}}
+>
+Signal 0{index + 1}
+</p>
+
+<p
+style={{
+fontSize:"16px",
+lineHeight:"1.75",
+color:brand.text
+}}
+>
+{item.signal}
+</p>
+</div>
+
+<div
+style={{
+background:"#ffffff",
+padding:"32px"
+}}
+>
+<p
+style={{
+fontSize:"12px",
+letterSpacing:"3px",
+textTransform:"uppercase",
+color:brand.blue,
+marginBottom:"24px"
+}}
+>
+Insight
+</p>
+
+<p
+style={{
+fontSize:"16px",
+lineHeight:"1.75",
+color:brand.deep
+}}
+>
+{item.insight}
+</p>
+</div>
+
+<div
+style={{
+background:brand.navy,
+padding:"32px"
+}}
+>
+<p
+style={{
+fontSize:"12px",
+letterSpacing:"3px",
+textTransform:"uppercase",
+color:brand.cyan,
+marginBottom:"24px"
+}}
+>
+Recommendation
+</p>
+
+<p
+style={{
+fontSize:"16px",
+lineHeight:"1.75",
+color:"#ffffff"
+}}
+>
+{item.recommendation}
+</p>
+</div>
 
 </div>
 ))}

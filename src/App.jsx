@@ -98,25 +98,22 @@ implication:"Growth depends on scalable delivery."
 }
 ]
 const cloudValue = [
-[
-"Problem",
-"Hospitals face integration complexity, cost pressure, and legacy system burden."
-],
-
-[
-"Capability",
-"Health Connect Cloud provides a managed healthcare integration layer."
-],
-
-[
-"Value",
-"Reduces infrastructure maintenance and supports faster interoperability delivery."
-],
-
-[
-"Strategic meaning",
-"Signals a shift from customer-managed software to cloud-managed healthcare infrastructure."
-]
+  [
+    "Market signal",
+    "Healthcare organizations are under pressure to reduce infrastructure ownership, integration maintenance, and implementation complexity."
+  ],
+  [
+    "Product interpretation",
+    "Health Connect Cloud turns interoperability from a customer-managed software function into a cloud-managed operating capability."
+  ],
+  [
+    "Commercial implication",
+    "The value proposition moves from technical connectivity to faster time-to-value, scalability, support, and reduced operational burden."
+  ],
+  [
+    "Strategic watchpoint",
+    "The key question is whether InterSystems can package this technical strength into a clear executive buying narrative."
+  ]
 ]
 const competitors = [
 
@@ -315,28 +312,28 @@ const signalInsightRecommendation = [
 ]
 const intelligenceDashboard = [
   {
-    metric: "Cloud Momentum",
+    metric: "Managed Cloud Momentum",
     status: "High",
     score: "84",
-    note: "Health Connect Cloud suggests movement toward managed delivery and subscription-based integration."
+    note: "Health Connect Cloud strengthens the shift from software deployment to managed healthcare infrastructure."
   },
   {
-    metric: "FHIR Readiness",
+    metric: "AI Data Readiness",
     status: "Strong",
     score: "87",
-    note: "IRIS for Health strengthens the data foundation required for AI, interoperability, and lower-latency access."
+    note: "FHIR-centered data access creates a stronger foundation for clinical AI workflows and real-time decision support."
   },
   {
-    metric: "AI Expansion",
-    status: "Emerging",
-    score: "78",
-    note: "IntelliCare and AI-enabled HealthShare capabilities indicate a shift from data exchange toward workflow intelligence."
+    metric: "Healthcare Specificity",
+    status: "Defensible",
+    score: "90",
+    note: "InterSystems remains differentiated by healthcare standards, integration depth, and mission-critical reliability."
   },
   {
-    metric: "Commercial Packaging",
+    metric: "Commercial Clarity",
     status: "Monitor",
-    score: "69",
-    note: "The next challenge is translating technical depth into clear buyer-facing value and ROI messaging."
+    score: "68",
+    note: "The strategic challenge is translating technical depth into simpler executive-level ROI and GTM messaging."
   }
 ]
 export default function App() {
@@ -803,30 +800,26 @@ border:"1px solid rgba(255,255,255,.08)",
     Product deep dive
   </p>
 
-  <h2
+<h2
 style={{
-fontSize:
-"clamp(52px,5vw,72px)",
-
-fontWeight:"300",
-
-lineHeight:"1.03",
-
-letterSpacing:"-.04em",
-
-maxWidth:"1200px"
+fontSize:"clamp(30px,4vw,52px)",
+lineHeight:"1.08",
+fontWeight:"500",
+maxWidth:"900px",
+color:brand.navy,
+marginBottom:"60px"
 }}
 >
-    
-    Health Connect Cloud reframes interoperability as a managed cloud service.
-  </h2>
+Health Connect Cloud shifts interoperability from software ownership to managed infrastructure.
+</h2>
 
   <div
     style={{
       marginTop: "60px",
       display: "grid",
       gridTemplateColumns: "repeat(4, 1fr)",
-      gap: "18px"
+      gap: "18px",
+      color: brand.navy,
     }}
   >
     {cloudValue.map(([label, text]) => (
@@ -2126,7 +2119,7 @@ color:"#D8E6F0",
 marginBottom:"60px"
 }}
 >
-This illustrative dashboard translates qualitative market signals into a structured view of strategic momentum. The objective is not to claim proprietary measurement, but to demonstrate how market intelligence can organize ambiguous signals into executive-ready indicators.
+This dashboard is directional, not audited. It translates public signals into a structured view of where InterSystems appears to have strategic momentum and where execution risk should be monitored.
 </p>
 
 <div

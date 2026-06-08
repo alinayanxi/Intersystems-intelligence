@@ -399,7 +399,7 @@ fontWeight:"600",
 color:"#071827"
 }}
 >
-InterSystems Brief
+Independent Market Perspective
 </div>
 
 </div>
@@ -419,7 +419,7 @@ letterSpacing:"1px"
 <span>Matrix</span>
 <span>Timeline</span>
 <span style={{color:"#143c8c", fontWeight:"700"}}>
-Alina Chen
+Prepared by Alina Chen
 </span>
 </div>
 

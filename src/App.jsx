@@ -349,6 +349,94 @@ color:brand.deep,
 fontFamily:"Arial, sans-serif"
 }}
 >
+  <header
+style={{
+position:"sticky",
+top:0,
+
+height:"72px",
+
+background:"rgba(255,255,255,.92)",
+
+backdropFilter:"blur(14px)",
+
+display:"flex",
+
+alignItems:"center",
+
+justifyContent:"space-between",
+
+padding:"0 48px",
+
+borderBottom:
+`1px solid ${brand.border}`,
+
+zIndex:100
+}}
+>
+
+<div
+style={{
+display:"flex",
+alignItems:"center",
+gap:"18px"
+}}
+>
+
+<img
+src={logo}
+style={{
+height:"30px"
+}}
+/>
+
+<div
+style={{
+fontWeight:"600",
+fontSize:"18px",
+color:brand.navy
+}}
+>
+InterSystems Brief
+</div>
+
+</div>
+
+<div
+style={{
+display:"flex",
+gap:"28px",
+
+fontSize:"13px",
+
+letterSpacing:"1px",
+
+textTransform:"uppercase",
+
+color:brand.text
+}}
+>
+
+<span>Overview</span>
+
+<span>Products</span>
+
+<span>Questions</span>
+
+<span>Dashboard</span>
+
+<span
+style={{
+color:brand.blue,
+fontWeight:"600"
+}}
+>
+Alina Chen
+</span>
+
+</div>
+
+</header>
 <header
 style={{
 position:"sticky",
@@ -427,7 +515,7 @@ Alina Chen
 </div>
 
 </header>
-      <section style={{
+      <section id="overview" style={{
         padding: "90px 9vw",
         borderBottom: "1px solid #ddd"
       }}>
@@ -542,7 +630,7 @@ Candidate-prepared intelligence microsite
         ))}
       </section>
 
-      <section id="products" style={{
+      <section id="questions" style={{
         padding: "90px 9vw",
         background: "#ffffff"
       }}>
@@ -1996,7 +2084,7 @@ color:"#ffffff"
 </div>
 
 </section>
-<section
+<section id="dashboard"
 style={{
 padding:"110px 9vw",
 background:brand.navy,

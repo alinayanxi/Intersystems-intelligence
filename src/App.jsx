@@ -313,6 +313,32 @@ const signalInsightRecommendation = [
       "Strengthen messaging around healthcare-native orchestration, not generic cloud integration."
   }
 ]
+const intelligenceDashboard = [
+  {
+    metric: "Cloud Momentum",
+    status: "High",
+    score: "84",
+    note: "Health Connect Cloud suggests movement toward managed delivery and subscription-based integration."
+  },
+  {
+    metric: "FHIR Readiness",
+    status: "Strong",
+    score: "87",
+    note: "IRIS for Health strengthens the data foundation required for AI, interoperability, and lower-latency access."
+  },
+  {
+    metric: "AI Expansion",
+    status: "Emerging",
+    score: "78",
+    note: "IntelliCare and AI-enabled HealthShare capabilities indicate a shift from data exchange toward workflow intelligence."
+  },
+  {
+    metric: "Commercial Packaging",
+    status: "Monitor",
+    score: "69",
+    note: "The next challenge is translating technical depth into clear buyer-facing value and ROI messaging."
+  }
+]
 export default function App() {
   return (
     <main
@@ -1967,6 +1993,142 @@ color:"#ffffff"
 </div>
 ))}
 
+</div>
+
+</section>
+<section
+style={{
+padding:"110px 9vw",
+background:brand.navy,
+color:"#ffffff"
+}}
+>
+
+<p
+style={{
+fontSize:"12px",
+letterSpacing:"4px",
+textTransform:"uppercase",
+color:brand.cyan,
+marginBottom:"28px"
+}}
+>
+Strategic Intelligence Dashboard
+</p>
+
+<h2
+style={{
+fontSize:"clamp(30px,4vw,52px)",
+lineHeight:"1.08",
+fontWeight:"500",
+maxWidth:"900px",
+color:"#ffffff",
+marginBottom:"24px"
+}}
+>
+A dashboard view of InterSystems’ strategic momentum.
+</h2>
+
+<p
+style={{
+fontSize:"16px",
+lineHeight:"1.8",
+maxWidth:"760px",
+color:"#D8E6F0",
+marginBottom:"60px"
+}}
+>
+This illustrative dashboard translates qualitative market signals into a structured view of strategic momentum. The objective is not to claim proprietary measurement, but to demonstrate how market intelligence can organize ambiguous signals into executive-ready indicators.
+</p>
+
+<div
+style={{
+display:"grid",
+gridTemplateColumns:"repeat(4,1fr)",
+gap:"22px"
+}}
+>
+
+{intelligenceDashboard.map((item)=>(
+<div
+key={item.metric}
+style={{
+background:"rgba(255,255,255,.08)",
+border:"1px solid rgba(255,255,255,.14)",
+padding:"30px",
+minHeight:"320px",
+borderRadius:"10px"
+}}
+>
+
+<p
+style={{
+fontSize:"12px",
+letterSpacing:"3px",
+textTransform:"uppercase",
+color:brand.cyan,
+marginBottom:"28px"
+}}
+>
+{item.metric}
+</p>
+
+<div
+style={{
+fontSize:"54px",
+lineHeight:"1",
+fontWeight:"600",
+marginBottom:"18px"
+}}
+>
+{item.score}
+</div>
+
+<div
+style={{
+display:"inline-block",
+padding:"8px 14px",
+borderRadius:"999px",
+background:"rgba(0,163,224,.18)",
+color:"#ffffff",
+fontSize:"13px",
+marginBottom:"28px"
+}}
+>
+{item.status}
+</div>
+
+<p
+style={{
+fontSize:"15px",
+lineHeight:"1.75",
+color:"#D8E6F0"
+}}
+>
+{item.note}
+</p>
+
+</div>
+))}
+
+</div>
+
+<div
+style={{
+marginTop:"46px",
+paddingTop:"28px",
+borderTop:"1px solid rgba(255,255,255,.18)",
+maxWidth:"900px",
+color:"#D8E6F0",
+fontSize:"15px",
+lineHeight:"1.8"
+}}
+>
+<strong style={{color:"#ffffff"}}>
+How to read this dashboard:
+</strong>
+{" "}
+The scores are directional and illustrative. They represent a structured synthesis of visible product direction, market positioning, and commercial implications rather than audited performance metrics.
 </div>
 
 </section>

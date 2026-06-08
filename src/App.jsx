@@ -238,6 +238,28 @@ impact:
 }
 
 ]
+const intelligenceFramework = [
+  {
+    step: "01",
+    title: "Signal Collection",
+    text: "Track public product launches, hiring signals, competitor messaging, customer cases, and healthcare technology trends."
+  },
+  {
+    step: "02",
+    title: "Signal Interpretation",
+    text: "Identify whether signals point to product expansion, commercial repositioning, customer pressure, or competitive movement."
+  },
+  {
+    step: "03",
+    title: "Strategic Hypothesis",
+    text: "Translate patterns into business hypotheses about where InterSystems may be moving next."
+  },
+  {
+    step: "04",
+    title: "Commercial Implication",
+    text: "Connect intelligence to messaging, segmentation, campaign priorities, and sales enablement."
+  }
+]
 export default function App() {
   return (
     <main
@@ -1529,6 +1551,95 @@ color:"#ffffff"
 
 </div>
 
+))}
+
+</div>
+
+</section>
+<section
+style={{
+padding:"110px 9vw",
+background:"#ffffff"
+}}
+>
+
+<p
+style={{
+fontSize:"12px",
+letterSpacing:"4px",
+textTransform:"uppercase",
+color:brand.blue,
+marginBottom:"28px"
+}}
+>
+Market Intelligence Framework
+</p>
+
+<h2
+style={{
+fontSize:"clamp(32px,4vw,56px)",
+lineHeight:"1.08",
+fontWeight:"500",
+maxWidth:"900px",
+color:brand.navy,
+marginBottom:"64px"
+}}
+>
+Turning market signals into strategic decisions.
+</h2>
+
+<div
+style={{
+display:"grid",
+gridTemplateColumns:"repeat(4,1fr)",
+gap:"22px"
+}}
+>
+
+{intelligenceFramework.map((item)=>(
+<div
+key={item.step}
+style={{
+border:`1px solid ${brand.border}`,
+padding:"30px",
+background:brand.light,
+minHeight:"260px"
+}}
+>
+
+<div
+style={{
+fontSize:"13px",
+letterSpacing:"2px",
+color:brand.cyan,
+marginBottom:"30px"
+}}
+>
+{item.step}
+</div>
+
+<h3
+style={{
+fontSize:"22px",
+lineHeight:"1.25",
+color:brand.navy,
+marginBottom:"22px"
+}}
+>
+{item.title}
+</h3>
+
+<p
+style={{
+fontSize:"15px",
+lineHeight:"1.75",
+color:brand.text
+}}
+>
+{item.text}
+</p>
+
+</div>
 ))}
 
 </div>

@@ -515,7 +515,7 @@ Alina Chen
 </div>
 
 </header>
-      <section id="overview" style={{
+      <section style={{
         padding: "90px 9vw",
         borderBottom: "1px solid #ddd"
       }}>
@@ -630,7 +630,7 @@ Candidate-prepared intelligence microsite
         ))}
       </section>
 
-      <section id="questions" style={{
+      <section id="products" style={{
         padding: "90px 9vw",
         background: "#ffffff"
       }}>
@@ -2084,7 +2084,7 @@ color:"#ffffff"
 </div>
 
 </section>
-<section id="dashboard"
+<section
 style={{
 padding:"110px 9vw",
 background:brand.navy,
@@ -2219,6 +2219,148 @@ How to read this dashboard:
 The scores are directional and illustrative. They represent a structured synthesis of visible product direction, market positioning, and commercial implications rather than audited performance metrics.
 </div>
 
+</section>
+<section
+id="sources"
+style={{
+padding:"100px 9vw",
+background:"#ffffff"
+}}
+>
+<p
+style={{
+fontSize:"12px",
+letterSpacing:"4px",
+textTransform:"uppercase",
+color:brand.blue,
+marginBottom:"28px"
+}}
+>
+Methodology & Sources
+</p>
+
+<h2
+style={{
+fontSize:"clamp(30px,4vw,52px)",
+lineHeight:"1.08",
+fontWeight:"500",
+maxWidth:"850px",
+color:brand.navy,
+marginBottom:"34px"
+}}
+>
+This brief is based on publicly observable market signals.
+</h2>
+
+<p
+style={{
+fontSize:"16px",
+lineHeight:"1.8",
+maxWidth:"780px",
+color:brand.text
+}}
+>
+The analysis draws from public product pages, company announcements, product positioning, competitive messaging, healthcare technology trends, and publicly available information. It is prepared independently for interview discussion and does not represent InterSystems’ internal views.
+</p>
+</section>
+<section
+id="recommendation"
+style={{
+padding:"110px 9vw",
+background:brand.navy,
+color:"#ffffff"
+}}
+>
+<p
+style={{
+fontSize:"12px",
+letterSpacing:"4px",
+textTransform:"uppercase",
+color:brand.cyan,
+marginBottom:"28px"
+}}
+>
+Final Recommendation
+</p>
+
+<h2
+style={{
+fontSize:"clamp(32px,4vw,56px)",
+lineHeight:"1.08",
+fontWeight:"500",
+maxWidth:"900px",
+color:"#ffffff",
+marginBottom:"42px"
+}}
+>
+InterSystems should continue owning the healthcare data coordination layer.
+</h2>
+
+<p
+style={{
+fontSize:"17px",
+lineHeight:"1.85",
+maxWidth:"820px",
+color:"#D8E6F0"
+}}
+>
+The strongest opportunity is not replacing EHR systems. It is becoming the layer that helps healthcare organizations connect, structure, and operationalize fragmented data across clinical workflows, infrastructure, and intelligence.
+</p>
+
+<p
+style={{
+fontSize:"17px",
+lineHeight:"1.85",
+maxWidth:"820px",
+color:"#D8E6F0",
+marginTop:"26px"
+}}
+>
+Health Connect Cloud, IRIS for Health, and HealthShare can be positioned around managed interoperability, AI-ready data infrastructure, and reduced operational complexity.
+</p>
+</section>
+<section
+id="author"
+style={{
+padding:"90px 9vw",
+background:brand.light
+}}
+>
+<p
+style={{
+fontSize:"12px",
+letterSpacing:"4px",
+textTransform:"uppercase",
+color:brand.blue,
+marginBottom:"28px"
+}}
+>
+About the Author
+</p>
+
+<h2
+style={{
+fontSize:"clamp(28px,3vw,44px)",
+lineHeight:"1.12",
+fontWeight:"500",
+maxWidth:"760px",
+color:brand.navy,
+marginBottom:"32px"
+}}
+>
+Prepared by Alina Chen.
+</h2>
+
+<p
+style={{
+fontSize:"16px",
+lineHeight:"1.8",
+maxWidth:"780px",
+color:brand.text
+}}
+>
+Alina Chen is a Boston University graduate student and Marketing Intelligence Associate candidate. This project demonstrates how she structures fragmented market signals into strategic narratives, product implications, and commercial recommendations.
+</p>
 </section>
     </main>
   )

@@ -346,32 +346,6 @@ color:brand.deep,
 fontFamily:"Arial, sans-serif"
 }}
 >
-  <header
-style={{
-position:"sticky",
-top:0,
-
-height:"72px",
-
-background:"rgba(255,255,255,.92)",
-
-backdropFilter:"blur(14px)",
-
-display:"flex",
-
-alignItems:"center",
-
-justifyContent:"space-between",
-
-padding:"0 48px",
-
-borderBottom:
-`1px solid ${brand.border}`,
-
-zIndex:100
-}}
->
-</header>
 <header
 style={{
 position:"sticky",

@@ -260,6 +260,36 @@ const intelligenceFramework = [
     text: "Connect intelligence to messaging, segmentation, campaign priorities, and sales enablement."
   }
 ]
+const strategicQuestions = [
+  {
+    question: "Can managed cloud integration become the next growth engine?",
+    context:
+      "Health Connect Cloud suggests a shift from customer-managed integration software toward a subscription-based, fully managed healthcare integration model.",
+    implication:
+      "If adoption accelerates, InterSystems can strengthen recurring revenue while reducing the operational burden for health systems."
+  },
+  {
+    question: "How defensible is interoperability against hyperscalers and EHR vendors?",
+    context:
+      "Cloud providers are moving deeper into healthcare data infrastructure, while EHR vendors continue expanding platform ecosystems.",
+    implication:
+      "InterSystems needs to position interoperability not as a connector, but as a healthcare-native operating capability."
+  },
+  {
+    question: "Can FHIR become a strategic control point rather than a compliance feature?",
+    context:
+      "IRIS for Health’s FHIR repository and healthcare data management capabilities create a stronger role in AI readiness and data activation.",
+    implication:
+      "FHIR can support a broader narrative around AI pipelines, lower latency, and unified healthcare data access."
+  },
+  {
+    question: "Can AI reduce implementation burden and expand product scalability?",
+    context:
+      "IntelliCare and AI-enabled HealthShare capabilities indicate movement toward workflow automation and decision support.",
+    implication:
+      "The commercial opportunity is not only AI features, but reducing the professional services intensity of healthcare deployments."
+  }
+]
 export default function App() {
   return (
     <main
@@ -1637,6 +1667,122 @@ color:brand.text
 }}
 >
 {item.text}
+</p>
+
+</div>
+))}
+
+</div>
+
+</section>
+<section
+style={{
+padding:"110px 9vw",
+background:brand.soft
+}}
+>
+
+<p
+style={{
+fontSize:"12px",
+letterSpacing:"4px",
+textTransform:"uppercase",
+color:brand.blue,
+marginBottom:"28px"
+}}
+>
+Strategic Questions
+</p>
+
+<h2
+style={{
+fontSize:"clamp(30px,4vw,52px)",
+lineHeight:"1.08",
+fontWeight:"500",
+maxWidth:"900px",
+color:brand.navy,
+marginBottom:"24px"
+}}
+>
+Questions executives should monitor.
+</h2>
+
+<p
+style={{
+fontSize:"16px",
+lineHeight:"1.8",
+maxWidth:"760px",
+color:brand.text,
+marginBottom:"60px"
+}}
+>
+A market intelligence function should not only summarize market activity. It should identify which questions deserve continuous monitoring because they may influence product positioning, commercial strategy, and executive decision-making.
+</p>
+
+<div
+style={{
+display:"grid",
+gridTemplateColumns:"repeat(2,1fr)",
+gap:"24px"
+}}
+>
+
+{strategicQuestions.map((item,index)=>(
+<div
+key={item.question}
+style={{
+background:"#ffffff",
+border:`1px solid ${brand.border}`,
+padding:"34px",
+minHeight:"360px",
+boxShadow:"0 18px 45px rgba(11,31,83,.06)"
+}}
+>
+
+<div
+style={{
+fontSize:"12px",
+letterSpacing:"2px",
+color:brand.cyan,
+marginBottom:"28px"
+}}
+>
+0{index + 1}
+</div>
+
+<h3
+style={{
+fontSize:"24px",
+lineHeight:"1.25",
+fontWeight:"600",
+color:brand.navy,
+marginBottom:"24px"
+}}
+>
+{item.question}
+</h3>
+
+<p
+style={{
+fontSize:"15px",
+lineHeight:"1.75",
+color:brand.text,
+marginBottom:"24px"
+}}
+>
+<strong>Context: </strong>
+{item.context}
+</p>
+
+<p
+style={{
+fontSize:"15px",
+lineHeight:"1.75",
+color:brand.deep
+}}
+>
+<strong>Strategic implication: </strong>
+{item.implication}
 </p>
 
 </div>
